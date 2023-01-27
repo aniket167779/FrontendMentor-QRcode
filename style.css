@@ -1,45 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
 }
 
 body {
+    margin: unset;
+    background-color: var(--light-gray);
     font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
     font-size: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
 }
 
-.container {
-    max-width: 350px;
-    margin: 0 auto;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.card {
-    background-color: hsl(0, 0%, 100%);
-    padding: 18px;
-    border-radius: 17px;
+main {
+    background-color: var(--white);
+    max-width: 320px;
+    padding: 1.075rem;
+    border-radius: 1.35rem;
+    box-shadow: 0 0 1.6rem hsla(0, 0%, 0%, 0.05);
     text-align: center;
-    margin: 0 1rem;
+    margin: 1.075rem;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 12px;
+img {
+    border-radius: 0.675rem;
+    margin-bottom: 1rem;
 }
 
-.text {
-    padding: 22px 10px;
+h1 {
+    font-size: 1.375rem;
+    line-height: 1.275;
+    margin-top: 1.1em;
+    color: var(--dark-blue);
 }
 
-.text h2 {
-    color: hsl(218, 44%, 22%);
-    padding-bottom: 15px;
+p {
+    line-height: 1.3;
+    color: var(--grayish-blue);
+    margin: 1.075em;
 }
 
-.text p {
-    color: hsl(220, 15%, 55%);
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
 }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
 
